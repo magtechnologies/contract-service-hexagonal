@@ -1,5 +1,3 @@
-Claro, aqui está um `README.md` completo e bem estruturado para a sua API, com base na implementação fornecida.
-
 # Contract Service - Arquitetura Hexagonal
 
 ## 📋 Descrição
