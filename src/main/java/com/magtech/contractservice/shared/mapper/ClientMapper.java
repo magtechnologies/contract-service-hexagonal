@@ -16,7 +16,6 @@ public interface ClientMapper {
     @Mapping(target = "updatedAt", ignore = true)
     Client toDomain(ClientRequest request);
 
-    @Mapping(target = "contracts", ignore = true)
     ClientResponse toResponse(Client client);
 
     @Mapping(target = "contracts", ignore = true)

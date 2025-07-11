@@ -21,13 +21,13 @@ public class ContractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(name = "contract_number", nullable = false, unique = true)
     private String number;
 
-    @Column(nullable = false)
+    @Column(name = "contract_description", nullable = false)
     private String description;
 
-    @Column(nullable = false, precision = 19, scale = 2)
+    @Column(name = "contract_value", nullable = false, precision = 19, scale = 2)
     private BigDecimal value;
 
     @Column(name = "start_date", nullable = false)
@@ -37,7 +37,7 @@ public class ContractEntity {
     private LocalDate endDate;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(name = "status", nullable = false)
     private ContractStatusEntity status;
 
     @ManyToOne(fetch = FetchType.LAZY)

@@ -33,7 +33,7 @@ src
 └── main
     └── java
         └── com/example/contractservice
-            ├── domain/                   # 헥사곤 (Core)
+            ├── domain/                   # Hexagonal (Core)
             │   ├── model/
             │   ├── port/
             │   │   ├── in/               # Portas de Entrada (Use Cases)

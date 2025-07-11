@@ -1,5 +1,6 @@
 package com.magtech.contractservice.infrastructure.adapter.out.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -37,6 +38,7 @@ public class ClientEntity {
     @Column(nullable = false)
     private Boolean active;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<ContractEntity> contracts;
 
