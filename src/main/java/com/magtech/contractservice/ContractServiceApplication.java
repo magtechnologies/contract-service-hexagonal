@@ -1,13 +1,11 @@
-package com.magtech.contract_service_hexagonal;
+package com.magtech.contractservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ContractServiceHexagonalApplication {
-
+public class ContractServiceApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(ContractServiceHexagonalApplication.class, args);
+		SpringApplication.run(ContractServiceApplication.class, args);
 	}
-
 }

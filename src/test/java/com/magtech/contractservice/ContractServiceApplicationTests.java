@@ -1,10 +1,10 @@
-package com.magtech.contract_service_hexagonal;
+package com.magtech.contractservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ContractServiceHexagonalApplicationTests {
+class ContractServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
